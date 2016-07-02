@@ -9,7 +9,7 @@ Install through `npm`:
 ##Usage
 - Provider: `NG2_TWITTER_PROVIDERS`
 
-```
+```typescript
 import { Component } from '@angular/core';
 import { HTTP_PROVIDERS } from '@angular/http';
 import { AuthorizedRequestService, NG2_TWITTER_PROVIDERS } from 'ng2-twitter';
@@ -21,8 +21,8 @@ import { AuthorizedRequestService, NG2_TWITTER_PROVIDERS } from 'ng2-twitter';
   `,
   providers: [HTTP_PROVIDERS, NG2_TWITTER_PROVIDERS,]
 })
-class YourApp {
-	result = '';
+export class YourApp {
+	result: any = '';
 
 	constructor(private twitter: AuthorizedRequestService){}
 
@@ -41,7 +41,7 @@ class YourApp {
 				tokenSecret: 'TSecret'
 			}
 		).subscribe((res)=>{
-			this.result = res.body;
+			this.result = res;
 		});
 	}
 }
