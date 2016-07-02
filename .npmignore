@@ -1,0 +1,11 @@
+src
+node_modules
+typings
+
+*.log
+*.tgz
+*.spec.js
+*.spec.d.ts
+
+tsconfig.json
+typings.json

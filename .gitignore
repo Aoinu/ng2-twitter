@@ -1,0 +1,9 @@
+dist
+node_modules
+typings
+
+*.js
+*.js.map
+*.log
+*.tgz
+
