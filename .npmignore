@@ -6,6 +6,7 @@ typings
 *.tgz
 *.spec.js
 *.spec.d.ts
+dist/apikeys.d.ts
 
 tsconfig.json
 typings.json

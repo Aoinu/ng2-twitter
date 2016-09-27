@@ -1,6 +1,6 @@
 {
   "name": "ng2-twitter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Angular2 service of authorized request for twitter.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -30,5 +30,5 @@
     "type": "git",
     "url": "https://github.com/Aoinu/ng2-twitter.git"
   },
-  "private": true
+  "private": false
 }
