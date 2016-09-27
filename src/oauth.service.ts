@@ -30,7 +30,7 @@ export class OAuthService {
 		return ''+Math.floor( ((new Date()).getTime())/1000 );
 	}
 
-	createNonce(){
+	createNonce(length: number){
 		const nonceChars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
 		let result = '';
 		for(let i=0;i<length;++i){
@@ -137,9 +137,13 @@ export class OAuthService {
 	}
 
 	fixedEncodeURIComponent(str: string){
-		return encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
-			return '%' + c.charCodeAt(0).toString(16);
-		});
+		return encodeURIComponent(str)
+			.replace(/[!'()*]/g, function(c) {
+				return '%' + c.charCodeAt(0).toString(16);
+			});
+			// .replace('%20', function(c) {
+			// 	return '%2520';
+			// });
 	}
 	
 }

@@ -1,10 +1,4 @@
 import {
-	it,
-	describe,
-	expect,
-} from '@angular/core/testing';
-
-import {
 	Sha1Service
 } from './sha1.service';
 

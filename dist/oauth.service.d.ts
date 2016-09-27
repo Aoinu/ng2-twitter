@@ -8,7 +8,7 @@ export declare class OAuthService {
      */
     createHeaderString(httpMethod: string, baseURL: string, requestParams: any, oauthKey: OAuthKey, oauthToken: OAuthToken, nonce: string, timestamp: string): string;
     createTimestamp(): string;
-    createNonce(): string;
+    createNonce(length: number): string;
     /**
      * Creating a signature
      * https://dev.twitter.com/oauth/overview/creating-signatures

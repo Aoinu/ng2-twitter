@@ -4,3 +4,5 @@ typings
 *.log
 *.tgz
 *.spec.js
+src/apikeys.ts
+dist/apikeys.js
