@@ -31,5 +31,5 @@
     "type": "git",
     "url": "https://github.com/Aoinu/ng2-twitter.git"
   },
-  "private": true
+  "private": false
 }
