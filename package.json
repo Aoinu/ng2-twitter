@@ -6,7 +6,6 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "rm ./dist/*",
     "build": "tsc",
     "prepublish": "npm run build"
   },
