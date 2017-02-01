@@ -1,12 +1,14 @@
 {
   "name": "ng2-twitter",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Angular2 service of authorized request for twitter.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "prebuild": "rm ./dist/*",
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "twitter",
@@ -16,19 +18,19 @@
   "author": "Aoinu",
   "license": "MIT",
   "devDependencies": {
-    "@types/jasmine": "^2.2.34",
-    "typescript": "2.0.3"
+    "typescript": "^2.0.3"
   },
   "dependencies": {
-    "@angular/core": "2.0.1",
-    "@angular/http": "2.0.1",
-    "jssha": "2.2.0",
-    "rxjs": "5.0.0-beta.12",
-    "zone.js": "0.6.25"
+    "@angular/core": "^2.3.1",
+    "@angular/http": "^2.3.1",
+    "@types/jssha": "0.0.29",
+    "jssha": "^2.2.0",
+    "rxjs": "^5.0.1",
+    "zone.js": "^0.7.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Aoinu/ng2-twitter.git"
   },
-  "private": false
+  "private": true
 }

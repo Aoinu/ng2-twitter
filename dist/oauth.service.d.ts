@@ -2,17 +2,9 @@ import { Sha1Service } from './sha1.service';
 export declare class OAuthService {
     private sha1;
     constructor(sha1: Sha1Service);
-    /**
-     * Authorizing a request
-     * https://dev.twitter.com/oauth/overview/authorizing-requests
-     */
     createHeaderString(httpMethod: string, baseURL: string, requestParams: any, oauthKey: OAuthKey, oauthToken: OAuthToken, nonce: string, timestamp: string): string;
     createTimestamp(): string;
     createNonce(length: number): string;
-    /**
-     * Creating a signature
-     * https://dev.twitter.com/oauth/overview/creating-signatures
-     */
     createSignature(httpMethod: string, baseURL: string, requestParams: any, oauthKey: OAuthKey, oauthToken: OAuthToken, nonce: string, timestamp: string): string;
     calculateSignature(signingKey: string, signatureBaseString: string): string;
     createSigningKey(oauthKey: OAuthKey, oauthToken: OAuthToken): string;
