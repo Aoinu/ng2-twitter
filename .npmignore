@@ -1,6 +1,5 @@
 src
 node_modules
-typings
 
 *.log
 *.tgz
@@ -9,4 +8,3 @@ typings
 dist/apikeys.d.ts
 
 tsconfig.json
-typings.json

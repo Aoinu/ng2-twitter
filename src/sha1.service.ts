@@ -1,8 +1,5 @@
-import { Injectable } from '@angular/core';
-
 import * as jssha from 'jssha';
 
-@Injectable()
 export class Sha1Service {
 	constructor(){}
 

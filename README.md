@@ -7,8 +7,6 @@ Install through `npm`:
 `npm install --save ng2-twitter`
 
 ##Usage
-- Module: `Ng2TwitterModule`
-
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -16,7 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { Ng2TwitterModule } from 'ng2-twitter';
+import { TwitterService } from 'ng2-twitter';
 
 @NgModule({
   declarations: [
@@ -25,10 +23,9 @@ import { Ng2TwitterModule } from 'ng2-twitter';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    Ng2TwitterModule //Add
+    HttpModule
   ],
-  providers: [],
+  providers: [TwitterService], // Add
   bootstrap: [AppComponent]
 })
 export class AppModule { }
@@ -36,7 +33,7 @@ export class AppModule { }
 
 ```typescript
 import { Component } from '@angular/core';
-import { AuthorizedRequestService } from 'ng2-twitter';
+import { TwitterService } from 'ng2-twitter';
 
 @Component({
   selector: 'app-root',
@@ -49,7 +46,7 @@ import { AuthorizedRequestService } from 'ng2-twitter';
 export class AppComponent {
   title = 'app works!';
   result = '';
-  constructor(private twitter: AuthorizedRequestService){ }
+  constructor(private twitter: TwitterService){ }
 
   getHomeTimeline(){
     this.twitter.get(

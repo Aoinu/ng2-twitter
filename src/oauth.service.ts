@@ -1,8 +1,5 @@
-import { Injectable } from '@angular/core';
-
 import { Sha1Service } from './sha1.service';
 
-@Injectable()
 export class OAuthService {
 	constructor(
 		private sha1: Sha1Service

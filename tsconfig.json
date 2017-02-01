@@ -7,8 +7,8 @@
     "inlineSourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": false,
+    "removeComments": true,
+    "noImplicitAny": true,
     "declaration": true,
 
     "outDir": "dist",
@@ -17,5 +17,12 @@
     "typeRoots": [
       "node_modules/@types"
     ]
-  }
+  },
+  "include": [
+    "src/*.ts"
+  ],
+  "exclude": [
+    "node_module",
+    "**/*.spec.ts"
+  ]
 }
