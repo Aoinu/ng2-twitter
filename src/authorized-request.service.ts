@@ -1,4 +1,3 @@
-import { Injectable } from '@angular/core';
 import {
 	Http,
 	Headers,
@@ -12,7 +11,6 @@ import {
 	OAuthToken
 } from './oauth.service';
 
-@Injectable()
 export class AuthorizedRequestService {
 	constructor(
 		private oauth: OAuthService,
