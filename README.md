@@ -1,12 +1,12 @@
-#ng2-twitter
+# ng2-twitter
 Angular2 service of authorized request for twitter.
 
-##Installation
+## Installation
 Install through `npm`:
 
 `npm install --save ng2-twitter`
 
-##Usage
+## Usage
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -69,7 +69,7 @@ export class AppComponent {
 }
 ```
 
-##Note
+## Note
 In Web browser, JavaScript application cannot access external domain server because of Cross-Origin Resource Sharing.
 
 This service supposes to be used in Cordova, Electron, Chrome Extensions or web security disabled browser.
